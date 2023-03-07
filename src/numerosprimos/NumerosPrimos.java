@@ -10,10 +10,12 @@ package numerosprimos;
  * 
  * @author arkano
  */
-public class NumerosPrimos {   
+public class NumerosPrimos {  
+    static final int maximo = 100;
     
     public static void main(String[] args) {
-       int[] centArray = CribaEratostenes.generarPrimos(100);             // Probamos a generar los primos entre 1 y 100
+       
+       int[] centArray = CribaEratostenes.generarPrimos(maximo);             // Probamos a generar los primos entre 1 y 100
        for (int i=0;i<centArray.length;i++){
             System.out.println(centArray[i]);                   // Los mostramos
             
